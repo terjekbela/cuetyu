@@ -1,0 +1,9 @@
+////////////////////////////////////////////////////////////////////////////////
+// CUEcontrol - Configuration settings                            http://bela.me
+////////////////////////////////////////////////////////////////////////////////
+
+#define HW_REV_A1                         // hardware revision
+//#define HW_REV_A2
+
+//#define SW_TEST                         // software function
+#define SW_CONTROLLER

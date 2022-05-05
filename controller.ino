@@ -1,0 +1,17 @@
+////////////////////////////////////////////////////////////////////////////////
+// CUEcontrol - Keys controller                                   http://bela.me
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+//setup routine
+void setupController() {
+  // put your setup code here, to run once:
+
+}
+
+//main loop
+void loopController() {
+  // put your main code here, to run repeatedly:
+
+}
