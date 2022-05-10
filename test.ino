@@ -1,15 +1,15 @@
 ////////////////////////////////////////////////////////////////////////////////
-// CUEcontrol - Keys controller                                   http://bela.me
+// CUEcontrol - Test routines                                     http://bela.me
 ////////////////////////////////////////////////////////////////////////////////
 
 
 
 //setup routine
-void setupController() {
+void setupTest() {
 
 }
 
 //main loop
-void loopController() {
+void loopTest() {
 
 }
