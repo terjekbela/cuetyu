@@ -19,7 +19,7 @@
 // Runtime variables
 ////////////////////////////////////////////////////////////////////////////////
 
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(40, NEO_PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel ioLeds = Adafruit_NeoPixel(40, NEO_PIN, NEO_GRB + NEO_KHZ800);
 
 
 
