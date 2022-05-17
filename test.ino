@@ -10,6 +10,15 @@ void setupTest() {
   ioLeds.show();
   ioLeds.setBrightness(16);
 
+  #if defined(RGB_RED)
+    pinMode(RGB_RED, OUTPUT);
+  #endif
+  #if defined(RGB_GRN)
+    pinMode(RGB_GRN, OUTPUT);
+  #endif
+  #if defined(RGB_BLU)
+    pinMode(RGB_BLU, OUTPUT);
+  #endif
   #if defined(NEO_PWR)
     pinMode(NEO_PWR, OUTPUT);
     digitalWrite(NEO_PWR, true);
@@ -18,7 +27,8 @@ void setupTest() {
 
 //main loop
 void loopTest() {
-  testIoNeo(20);
+  testIoRGB(500);
+  //testIoNeo(20);
 }
 
 void testIoNeo(int wait) {
@@ -31,3 +41,11 @@ void testIoNeo(int wait) {
     delay(wait);
   }
 }
+
+#if defined(RGB_RED)
+void testIoRGB(int wait) {
+  analogWrite(RGB_RED, 32); delay(wait); digitalWrite(RGB_RED, true);
+  analogWrite(RGB_GRN, 64); delay(wait); digitalWrite(RGB_GRN, true);
+  analogWrite(RGB_BLU, 32); delay(wait); digitalWrite(RGB_BLU, true);
+}
+#endif
