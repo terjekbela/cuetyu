@@ -6,6 +6,8 @@
 
 //setup routine
 void setupTest() {
+  Keyboard.begin();
+
   ioLeds.begin();
   ioLeds.show();
   ioLeds.setBrightness(16);
@@ -27,8 +29,9 @@ void setupTest() {
 
 //main loop
 void loopTest() {
-  testIoRGB(500);
+  //testIoRGB(500);
   //testIoNeo(20);
+  testKeySend(5000);
 }
 
 void testIoNeo(int wait) {
@@ -49,3 +52,10 @@ void testIoRGB(int wait) {
   analogWrite(RGB_BLU, 32); delay(wait); digitalWrite(RGB_BLU, true);
 }
 #endif
+
+void testKeySend(int wait) {
+  Keyboard.press('a');
+  delay(100);
+  Keyboard.releaseAll();
+  delay(wait);
+}

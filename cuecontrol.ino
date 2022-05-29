@@ -11,6 +11,7 @@
 #include "config.h"
 #include "circuit.h"
 
+#include <Keyboard.h>
 #include <Adafruit_NeoPixel.h>
 
 
